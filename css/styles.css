@@ -91,7 +91,7 @@ h1,h2,h3,h4 {
 ==============================================*/
 
 #home {
-	padding-top: 4px;
+	padding-top: 0px;
 	background: url("../img/bgColorFlipped.png") top center no-repeat;
 	background-attachment: fixed;
 }
