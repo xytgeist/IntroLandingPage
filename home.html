@@ -471,6 +471,7 @@
 	<script type="text/javascript">
 $(document).ready(function() {
 	$('#invite').ketchup().submit(function() {
+		alert("I'm here");
 		if ($(this).ketchup('isValid')) {
 			var action = $(this).attr('action');
 			$.ajax({
