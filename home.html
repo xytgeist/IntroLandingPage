@@ -481,9 +481,11 @@ $(document).ready(function() {
 				},
 				success: function(data){
 					$('#result').html(data).css('color', 'green');
+					alert("hi there");
 				},
 				error: function() {
 					$('#result').html('Sorry, an error occurred.').css('color', 'red');
+					alert("you suck");
 				}
 			});
 		}
