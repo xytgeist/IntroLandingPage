@@ -470,6 +470,11 @@
 	</script>		
 	<script type="text/javascript">
 $(document).ready(function() {
+$('invite').submit(function(event){
+alert("good");
+
+});
+
 	$('#invite').ketchup().submit(function() {
 		alert("I'm here");
 		if ($(this).ketchup('isValid')) {
