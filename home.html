@@ -81,7 +81,7 @@
 			<p>Want to meet while you're out? Allow us to introduce you in a whole new way!</p>
 			<br>	
 			<!-- SUBSCRIBE FORM -->
-			<form  id="invite" action="/subscribe.php" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<form  id="invite"  name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			  <div class="input-append add-on">
 			  	<input type="text" placeholder="your@email.com" name="email" id="address" data-validate="validate(required, email)" style="min-width: 240px; color:#333; font-size 16;"required/>
 			  		
@@ -470,7 +470,7 @@
 	</script>		
 	<script type="text/javascript">
 $(document).ready(function() {
-$('invite').submit(function(event){
+$('#invite').submit(function(event){
 alert("good");
 
 });
