@@ -593,22 +593,23 @@ $(function() {
 		}
 		else
 		{
-			$.ajax({
+			$.ajax(
+			{
 			type: "POST",
 			url: "subscribe.php",
 			data: dataString,
 			success: function()
 			{
-				$.get('success.html', function(data){
+				$.get('success.html', function(data)
+				{
 					modal.open({content: data});
-	
-			}
+				});
+			}		
+			});
 		});
-}
 return false;
+}
 });
-});
-
 
 </script>
   </body>
