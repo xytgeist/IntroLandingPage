@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 	<!-- TITLE, DESCRIPTION, KEYWORD -->
-    <title>!ntro | Meet someone tonight!</title>
-    <meta name="description" content="!ntro is the easiest way to meet interesting and attractive people while you're out.">
-    <meta name="keyword" content="meet, social, app, date, attractive, interesting, hot, friend, fun, game">
-    <!-- END TITLE, DESCRIPTION, KEYWORD -->
+	<title>!ntro | Meet someone tonight!</title>
+	<meta name="description" content="!ntro is the easiest way to meet interesting and attractive people while you're out.">
+	<meta name="keyword" content="meet, social, app, date, attractive, interesting, hot, friend, fun, game">
+	<!-- END TITLE, DESCRIPTION, KEYWORD -->
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="jquery.ketchup.all.min.js" type="text/javascript"></script>
-    <!-- CSS / STYLES -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-		<link href="css/styles.css" rel="stylesheet">
-		<link href="css/custom-responsive.css" rel="stylesheet">
-		<link href="css/normalize.css" rel="stylesheet">
-		<!-- END CSS / STYLES -->
+	<!-- CSS / STYLES -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/custom-responsive.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<!-- END CSS / STYLES -->
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+      <![endif]-->
 
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="favicon.ico">
-    <!-- END FAVICON -->
-    		<style>
-			* {
-				margin:0; 
-				padding:0;
-			}
+      <!-- FAVICON -->
+      <link rel="shortcut icon" href="favicon.ico">
+      <!-- END FAVICON -->
+      <style>
+      * {
+      	margin:0; 
+      	padding:0;
+      }
 
-			#overlay {
-				position:fixed; 
-				top:0;
-				left:0;
-				width:100%;
-				height:100%;
-				background:#000;
-				opacity:0.5;
-				filter:alpha(opacity=50);
-			}
+      #overlay {
+      	position:fixed; 
+      	top:0;
+      	left:0;
+      	width:100%;
+      	height:100%;
+      	background:#000;
+      	opacity:0.5;
+      	filter:alpha(opacity=50);
+      }
 
-			#modal {
-				position:absolute;
-				background:url(tint20.png) 0 0 repeat;
-				background:rgba(0,0,0,0.2);
-				border-radius:14px;
-				padding:8px;
-			}
+      #modal {
+      	position:absolute;
+      	background:url(tint20.png) 0 0 repeat;
+      	background:rgba(0,0,0,0.2);
+      	border-radius:14px;
+      	padding:8px;
+      }
 
-			#content {
-				border-radius:8px;
-				background:#fff;
-				padding:20px;
-			}
+      #content {
+      	border-radius:8px;
+      	background:#fff;
+      	padding:20px;
+      }
 
-			#close {
-				position:absolute;
-				background:url(close.png) 0 0 no-repeat;
-				width:24px;
-				height:27px;
-				display:block;
-				text-indent:-9999px;
-				top:-7px;
-				right:-7px;
-			}
-		</style>
-		<script>
-			var modal = (function(){
-				var 
-				method = {},
-				$overlay,
-				$modal,
-				$content,
-				$close;
+      #close {
+      	position:absolute;
+      	background:url(close.png) 0 0 no-repeat;
+      	width:24px;
+      	height:27px;
+      	display:block;
+      	text-indent:-9999px;
+      	top:-7px;
+      	right:-7px;
+      }
+      </style>
+      <script>
+      var modal = (function(){
+      	var 
+      	method = {},
+      	$overlay,
+      	$modal,
+      	$content,
+      	$close;
 
 				// Center the modal in the viewport
 				method.center = function () {
@@ -135,86 +135,86 @@
 
 				return method;
 			}());
-		</script>
-  </head>
+</script>
+</head>
 
-  <body>	
+<body>	
 	<!-- HOME SECTION -->
 	<section id="home">
-	  <!-- NAVBAR -->
+		<!-- NAVBAR -->
 		<!-- Commenting out NAVBAR - this plus two more comment sections directly below -->
 		<!--<div id="navbar" class="navbar navbar-static-top" data-spy="affix"> -->
 		<div id="navbar" class="navbar navbar-static-top">
-		<div class="navbar-inner">
-		  <div class="container">
-			<a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-			  <i class="icon-arrow-down"></i>
-			</a>
-		
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<i class="icon-arrow-down"></i>
+					</a>
 
-			<!-- LOGO / BRAND -->
-			<a class="brand" href="#"><img src="introLogoGreySmall.png" alt="logo"></a> 
-		
-			<!-- END LOGO / BRAND -->
-			
-			<!-- NAVBAR COLLAPSE -->
-			<div class="nav-collapse collapse"> 
-			  <ul class="nav pull-right">
-			    <li><a class="smoothScroll" href="#home">Home</a></li>
-			    <li><a class="smoothScroll" href="#features">Features</a></li>
-			    <li><a class="smoothScroll" href="#about">About</a></li>
-			    <li><a class="smoothScroll" href="#team">Our Team</a></li>
-			    <li><a href="#myModal" data-toggle="modal">Contact</a></li>
-			  </ul>
-			</div> 
-		
-			<!-- END NAVBAR COLLAPSE -->
-			
-		  </div>
-		</div>
-	  </div>	  	  
-	  <!-- END NAVBAR -->
-	  
-	  <!-- TOP CONTENT -->
-	  <div class="container top-content">
-		<div class="row">
-		  <!-- TOP IMAGE -->
-		  <!-- TOP TEXT -->
-		  <div class="span6 top-text">
-		  <!-- Intro Logo-->
-		  	<div class="top-image">
-		  		<img src="img/introLogoWhite3.png" >
-		  	</div>
-		  
-		    <h1>MEET RIGHT NOW</h1>
-			<p>Want to meet while you're out? Allow us to introduce you in a whole new way!</p>
-			<br>	
-			<!-- SUBSCRIBE FORM -->
-			<form  id="invite"  name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-			  <div class="input-append add-on">
-			  	<input type="text" placeholder="your@email.com" name="email" id="email" data-validate="validate(required, email)" style="min-width: 240px; color:#333; font-size 16;"required/>
-			  		
-			  		<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    				<div style="position: absolute; left: -5000px;"><input type="text" name="b_45b0ec174a75eed42672aa77c_8617a50053" value=""></div>
-			    
-			    <input type="submit" value="REQUEST INVITE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger btn-large">
 
-		      </div>
-			  <p class="small-text">No spam, your email is safe with us :D</p>
-			</form>		
-			<!-- END SUBSCRIBE FORM -->
-		  </div>
-		  <!-- END TOP TEXT -->
-		  
-		  <!-- TOP IMAGE -->		  
-		  <div class="span6 top-image">	
-			<img src="img/layout/iPhoneMain-victoria.png" alt="top image">
-		  </div>
-		  <!-- END TOP IMAGE -->
+					<!-- LOGO / BRAND -->
+					<a class="brand" href="#"><img src="introLogoGreySmall.png" alt="logo"></a> 
+
+					<!-- END LOGO / BRAND -->
+
+					<!-- NAVBAR COLLAPSE -->
+					<div class="nav-collapse collapse"> 
+						<ul class="nav pull-right">
+							<li><a class="smoothScroll" href="#home">Home</a></li>
+							<li><a class="smoothScroll" href="#features">Features</a></li>
+							<li><a class="smoothScroll" href="#about">About</a></li>
+							<li><a class="smoothScroll" href="#team">Our Team</a></li>
+							<li><a href="#myModal" data-toggle="modal">Contact</a></li>
+						</ul>
+					</div> 
+
+					<!-- END NAVBAR COLLAPSE -->
+
+				</div>
+			</div>
+		</div>	  	  
+		<!-- END NAVBAR -->
+
+		<!-- TOP CONTENT -->
+		<div class="container top-content">
+			<div class="row">
+				<!-- TOP IMAGE -->
+				<!-- TOP TEXT -->
+				<div class="span6 top-text">
+					<!-- Intro Logo-->
+					<div class="top-image">
+						<img src="img/introLogoWhite3.png" >
+					</div>
+
+					<h1>MEET RIGHT NOW</h1>
+					<p>Want to meet while you're out? Allow us to introduce you in a whole new way!</p>
+					<br>	
+					<!-- SUBSCRIBE FORM -->
+					<form  id="invite"  name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div class="input-append add-on">
+							<input type="text" placeholder="your@email.com" name="email" id="email" data-validate="validate(required, email)" style="min-width: 240px; color:#333; font-size 16;"required/>
+
+							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							<div style="position: absolute; left: -5000px;"><input type="text" name="b_45b0ec174a75eed42672aa77c_8617a50053" value=""></div>
+
+							<input type="submit" value="REQUEST INVITE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger btn-large">
+
+						</div>
+						<p class="small-text">No spam, your email is safe with us :D</p>
+					</form>		
+					<!-- END SUBSCRIBE FORM -->
+				</div>
+				<!-- END TOP TEXT -->
+
+				<!-- TOP IMAGE -->		  
+				<div class="span6 top-image">	
+					<img src="img/layout/iPhoneMain-victoria.png" alt="top image">
+				</div>
+				<!-- END TOP IMAGE -->
 				
-		</div>			
-	  </div>
-	  <!-- END TOP CONTENT -->
+			</div>			
+		</div>
+		<!-- END TOP CONTENT -->
 	</section>
 	<!-- END HOME SECTION -->
 	
@@ -222,99 +222,99 @@
 	
 	<!-- FEATURES SECTION -->
 	<section id="features">
-	  <div id="cbp-so-scroller" class="cbp-so-scroller">
-		
-		<!-- RIGHT FEATURES -->
-		<section class="cbp-so-section">
-		  <!-- RIGHT FEATURES IMAGE -->
-		  <figure class="cbp-so-side cbp-so-side-left">
-			<img src="img/layout/3quarter-Shane.png" alt="img01">
-		  </figure>
-		  <!-- END RIGHT FEATURES IMAGE -->
-		  
-		  <!-- RIGHT FEATURES TEXT -->
-		  <article class="cbp-so-side cbp-so-side-right">
-			<h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">Try it for yourself...</span></h2>
-			<p class="muted">!ntro integrates with your natural human behavior patterns to match you with attractive people that share similar interests. This provides an experience unlike any other app - you can see genuine profiles, meet those people right now, and meet as many as you like <i>every time you go out.</i> We will show you all of the interesting and attractive people that are actually doing the same things you're doing <i>while you're doing them!</i> </p>
-			<ul class="icons-ul big-li muted">
-	 		  <li><i class="icon-ok"></i>No awkward or cheesy pick-up lines</li>
-			  <li><i class="icon-ok"></i>Eliminates the 'fear of rejection'</li>
-			  <li><i class="icon-ok"></i>No 'digital courting' or setting up 'blind' dates</li>
-			  <li><i class="icon-ok"></i>You can meet RIGHT NOW!</li>
-			</ul>
-			<br>
+		<div id="cbp-so-scroller" class="cbp-so-scroller">
+
+			<!-- RIGHT FEATURES -->
+			<section class="cbp-so-section">
+				<!-- RIGHT FEATURES IMAGE -->
+				<figure class="cbp-so-side cbp-so-side-left">
+					<img src="img/layout/3quarter-Shane.png" alt="img01">
+				</figure>
+				<!-- END RIGHT FEATURES IMAGE -->
+
+				<!-- RIGHT FEATURES TEXT -->
+				<article class="cbp-so-side cbp-so-side-right">
+					<h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">Try it for yourself...</span></h2>
+					<p class="muted">!ntro integrates with your natural human behavior patterns to match you with attractive people that share similar interests. This provides an experience unlike any other app - you can see genuine profiles, meet those people right now, and meet as many as you like <i>every time you go out.</i> We will show you all of the interesting and attractive people that are actually doing the same things you're doing <i>while you're doing them!</i> </p>
+					<ul class="icons-ul big-li muted">
+						<li><i class="icon-ok"></i>No awkward or cheesy pick-up lines</li>
+						<li><i class="icon-ok"></i>Eliminates the 'fear of rejection'</li>
+						<li><i class="icon-ok"></i>No 'digital courting' or setting up 'blind' dates</li>
+						<li><i class="icon-ok"></i>You can meet RIGHT NOW!</li>
+					</ul>
+					<br>
 			<!--
 			<div class="btn-buy pull-left">
 			  <a class="btn btn-primary"><img src="img/button/1.png" alt="button1"></a>
 			  <a class="btn btn-success"><img src="img/button/2.png" alt="button2"></a>
 			</div> -->
-		  </article>
-		  <!-- END RIGHT FEATURES TEXT -->
-		</section>
-		<!-- END RIGHT FEATURES -->
-		<!-- LEFT FEATURES -->
-		<section class="cbp-so-section">
-		  <!-- LEFT FEATURES TEXT -->
-	   	  <article class="cbp-so-side cbp-so-side-left">
+		</article>
+		<!-- END RIGHT FEATURES TEXT -->
+	</section>
+	<!-- END RIGHT FEATURES -->
+	<!-- LEFT FEATURES -->
+	<section class="cbp-so-section">
+		<!-- LEFT FEATURES TEXT -->
+		<article class="cbp-so-side cbp-so-side-left">
 			<h2 class="featurette-heading">You're out to have a good time. <span class="muted">Maybe meet someone...</span></h2>
 			<p class="muted">Show us who you are! Choose any three words - describe yourself, how you feel, what you want to do, whatever! This is your !ntro. We'll combine your !ntro with your pics and introduce you to others. Want to see who's nearby? Get ready because they come fast. We'll show you 3 pics in 3 seconds. Make a decision and get ready for the next !ntro! Got a match? Meet up! Remember, !ntro mimics real life and the clock is ticking. When you leave, so do your matches.</p>
 			<br>
 			<!-- <a class="btn btn-danger btn-large">Learn More</a> --> <!--button-->
-		  </article>
-		  <!-- END LEFT FEATURES TEXT -->
-		  
-		  <!-- LEFT FEATURES IMAGE -->
-		  <figure class="cbp-so-side cbp-so-side-right">
+		</article>
+		<!-- END LEFT FEATURES TEXT -->
+
+		<!-- LEFT FEATURES IMAGE -->
+		<figure class="cbp-so-side cbp-so-side-right">
 			<img src="img/layout/3iPhones.png" alt="img01">
-		  </figure>
-		  <!-- END LEFT FEATURES IMAGE -->
-		</section>
-		<!-- END LEFT FEATURES -->
-		
-		
-	  </div>
-	  <!-- ABOUT SECTION -->
+		</figure>
+		<!-- END LEFT FEATURES IMAGE -->
+	</section>
+	<!-- END LEFT FEATURES -->
+
+
+</div>
+<!-- ABOUT SECTION -->
+
+<section id="about">
 	
-	<section id="about">
-	
-	  <!-- TOP ABOUT TEXT -->
-	  <div class="container first">
+	<!-- TOP ABOUT TEXT -->
+	<div class="container first">
 		<div class="row">
-		  <div class="span12">
-		    <h2 class="featurette-heading">How !ntro Works...</h2>
-			<p class="muted">The process couldn't be simpler...OR MORE FUN!</p>
-		  </div>
+			<div class="span12">
+				<h2 class="featurette-heading">How !ntro Works...</h2>
+				<p class="muted">The process couldn't be simpler...OR MORE FUN!</p>
+			</div>
 		</div>
-	  </div>
-	  <!-- END TOP ABOUT TEXT -->
-	  
-	  <!-- ABOUT TEXT WITH ICON / IMAGE -->
-	  <div class="container second">
+	</div>
+	<!-- END TOP ABOUT TEXT -->
+
+	<!-- ABOUT TEXT WITH ICON / IMAGE -->
+	<div class="container second">
 		<div class="row">
-		  <div class="span4">
-			<img src="img/icon/RoundIconLaunch.png" alt="">
-			<h3>Launch</h3>
-			<p>Pick three photos from your Facebook, Twitter or phone to create your profile.  When you go out: pick a three-word !ntro (have fun with this), select your hang-out radius and how long you'll be there, then broadcast your profile with <i><u>Go !ntro</u></i></p>
-		  </div>
-		  <div class="span4">
-			<img src="img/icon/RoundIconPic.png" alt="">
-			<h3>Select</h3>
-			<p>This is where the fun begins! Let us know if you're interested in meeting boys, girls or both. Each profile within your selected area will flash their three pics, then you choose whether or not you like them. But be quick about it - you only see the pics for one second each!</p>
-		  </div>
-		  <div class="span4">
-			<img src="img/icon/RoundIconChat.png" alt="">
-			<h3>Connect</h3>
-			<p>Any two people that like each other are matched. Now you can see their profile and chat. You're already in the same area...go meet them for a drink! Who knows, you just might <i>start with a '!'</i></p>
-		  </div>	
+			<div class="span4">
+				<img src="img/icon/RoundIconLaunch.png" alt="">
+				<h3>Launch</h3>
+				<p>Pick three photos from your Facebook, Twitter or phone to create your profile.  When you go out: pick a three-word !ntro (have fun with this), select your hang-out radius and how long you'll be there, then broadcast your profile with <i><u>Go !ntro</u></i></p>
+			</div>
+			<div class="span4">
+				<img src="img/icon/RoundIconPic.png" alt="">
+				<h3>Select</h3>
+				<p>This is where the fun begins! Let us know if you're interested in meeting boys, girls or both. Each profile within your selected area will flash their three pics, then you choose whether or not you like them. But be quick about it - you only see the pics for one second each!</p>
+			</div>
+			<div class="span4">
+				<img src="img/icon/RoundIconChat.png" alt="">
+				<h3>Connect</h3>
+				<p>Any two people that like each other are matched. Now you can see their profile and chat. You're already in the same area...go meet them for a drink! Who knows, you just might <i>start with a '!'</i></p>
+			</div>	
 		</div>
 		<hr>
-	  </div>
-	  <!-- END ABOUT TEXT WITH ICON / IMAGE -->
-	  
-	</section>
-	<!-- END ABOUT SECTION -->
-	 	
-	  <!-- ADDITIONAL FEATURES -->
+	</div>
+	<!-- END ABOUT TEXT WITH ICON / IMAGE -->
+
+</section>
+<!-- END ABOUT SECTION -->
+
+<!-- ADDITIONAL FEATURES -->
 	  <!--
 	  <div class="container additional-features"> 
 		<div class="container-narrow">
@@ -396,167 +396,167 @@
 		</div>
 	  </div>
 	-->
-	  <!-- END ADDITIONAL FEATURES -->
-	  
-	</section>
+	<!-- END ADDITIONAL FEATURES -->
 
-	<!-- END FEATURES SECTION -->
-	
-	<svg id="curveUpColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-	  <path d="M0 100 C 20 0 50 0 100 100 Z"/>
-	</svg>
-	
-	<!-- TEAM SECTION -->
-	<section id="team">
-	  <div class="container third">
+</section>
+
+<!-- END FEATURES SECTION -->
+
+<svg id="curveUpColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+	<path d="M0 100 C 20 0 50 0 100 100 Z"/>
+</svg>
+
+<!-- TEAM SECTION -->
+<section id="team">
+	<div class="container third">
 		<h2 class="featurette-heading">Meet Our Team</h2>
 		<p>Using technology to improve live social interaction.</p>
 		
 		<div id="cbp-qtrotator" class="cbp-qtrotator">
-		
-		  <div class="cbp-qtcontent">
-		    <!-- TEAM IMAGES -->
-			<img class="img-circle" src="img/testimonial/JodyCartoon.png" alt="img01" />
-			<!-- END TEAM IMAGES -->
-			<blockquote>
-			  <p>The king of random Facebook posts. Jody's favorite food is Cap'n Crunch.</p>
-			  <footer>Jody Ford, <em>App Developer</em></footer>
-			</blockquote>
-		  </div>
-		  
-		  <div class="cbp-qtcontent">
-		    <!-- TEAM IMAGES -->
-			<img class="img-circle" src="img/testimonial/BrianCartoon.png" alt="img02" />
-			<!-- END TEAM IMAGES -->
-			<blockquote>
-			  <p>A modern day digital Dali. Brian's favorite character is Zelda. </p>
-			  <footer>Brian Richardson, <em>Creative Director</em></footer>
-			</blockquote>
-		  </div>
-		  
-		  <div class="cbp-qtcontent">
-		    <!-- TEAM IMAGES -->
-			<img class="img-circle" src="img/testimonial/BenCartoon.png" alt="img03" />
-			<!-- END TEAM IMAGES -->
-			<blockquote>
-			  <p>Once drove a Lamborghini Countach out of the back of a C17 at 34,000 ft. Ben's favorite television show is Baby Einstein.</p>
-			  <footer>Ben Smith, <em>Acquisition Architect</em></footer>
-			</blockquote>
-		  </div>
-		  
-		  <div class="cbp-qtcontent">
-		    <!-- TEAM IMAGES -->
-			<img class="img-circle" src="img/testimonial/RyanCartoon.png" alt="img04" />
-			<!-- END TEAM IMAGES -->
-			<blockquote>
-			  <p>Fought a kickboxer in Thailand. Lost. Ryan's favorite color is root beer.</p>
-			  <footer>Ryan Franklin, <em>Growth Hacker</em></footer>
-			</blockquote>
-		  </div>
-		  
-		</div>
-		
-	  </div>
-	</section>
-	<!-- END TEAM SECTION -->
-	
-	<!-- FOOTER SECTION -->
-	<section id="footer">
-	<svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-	  <path d="M0 0 C 50 100 80 100 100 0 Z"/>
-	</svg>
-	  <div class="container">
-		<div class="row-fluid">
-		  
-		  <!-- COPYRIGHT -->
-		  <div class="span6">
-			<p class="copyright">&copy; Copyright 2014. <strong>Intro App, Inc.</strong>  ALL RIGHTS RESERVED</p>
-		  </div>
-		  <!-- END COPYRIGHT -->
-		  
-		  <!-- SOCIAL ICON -->
-		  <div class="span6">
-			<div class="social">
-			  <a href="http://www.startupunderdogs.com"><img src="img/social/rss.png" class="img-circle" alt="rss"></a>
-			  <a href="https://plus.google.com/105260740812447089662/about"><img src="img/social/google.png" class="img-circle" alt="google"></a>
-			  <a href="#"><img src="img/social/twitter.png" class="img-circle" alt="twitter"></a>
-			  <a href="https://www.facebook.com/introapp"><img src="img/social/facebook.png" class="img-circle" alt="facebook"></a>
-			  
 
-
+			<div class="cbp-qtcontent">
+				<!-- TEAM IMAGES -->
+				<img class="img-circle" src="img/testimonial/JodyCartoon.png" alt="img01" />
+				<!-- END TEAM IMAGES -->
+				<blockquote>
+					<p>The king of random Facebook posts. Jody's favorite food is Cap'n Crunch.</p>
+					<footer>Jody Ford, <em>App Developer</em></footer>
+				</blockquote>
 			</div>
-		  </div>
-		  <!-- END SOCIAL ICON -->
-		  
+
+			<div class="cbp-qtcontent">
+				<!-- TEAM IMAGES -->
+				<img class="img-circle" src="img/testimonial/BrianCartoon.png" alt="img02" />
+				<!-- END TEAM IMAGES -->
+				<blockquote>
+					<p>A modern day digital Dali. Brian's favorite character is Zelda. </p>
+					<footer>Brian Richardson, <em>Creative Director</em></footer>
+				</blockquote>
+			</div>
+
+			<div class="cbp-qtcontent">
+				<!-- TEAM IMAGES -->
+				<img class="img-circle" src="img/testimonial/BenCartoon.png" alt="img03" />
+				<!-- END TEAM IMAGES -->
+				<blockquote>
+					<p>Once drove a Lamborghini Countach out of the back of a C17 at 34,000 ft. Ben's favorite television show is Baby Einstein.</p>
+					<footer>Ben Smith, <em>Acquisition Architect</em></footer>
+				</blockquote>
+			</div>
+
+			<div class="cbp-qtcontent">
+				<!-- TEAM IMAGES -->
+				<img class="img-circle" src="img/testimonial/RyanCartoon.png" alt="img04" />
+				<!-- END TEAM IMAGES -->
+				<blockquote>
+					<p>Fought a kickboxer in Thailand. Lost. Ryan's favorite color is root beer.</p>
+					<footer>Ryan Franklin, <em>Growth Hacker</em></footer>
+				</blockquote>
+			</div>
+
 		</div>
-	  </div>
-	</section>
-	<!-- END FOOTER SECTION -->
-	
-	<!-- CONTACT MODAL -->
-	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-header">
+		
+	</div>
+</section>
+<!-- END TEAM SECTION -->
+
+<!-- FOOTER SECTION -->
+<section id="footer">
+	<svg id="curveDownColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+		<path d="M0 0 C 50 100 80 100 100 0 Z"/>
+	</svg>
+	<div class="container">
+		<div class="row-fluid">
+
+			<!-- COPYRIGHT -->
+			<div class="span6">
+				<p class="copyright">&copy; Copyright 2014. <strong>Intro App, Inc.</strong>  ALL RIGHTS RESERVED</p>
+			</div>
+			<!-- END COPYRIGHT -->
+
+			<!-- SOCIAL ICON -->
+			<div class="span6">
+				<div class="social">
+					<a href="http://www.startupunderdogs.com"><img src="img/social/rss.png" class="img-circle" alt="rss"></a>
+					<a href="https://plus.google.com/105260740812447089662/about"><img src="img/social/google.png" class="img-circle" alt="google"></a>
+					<a href="#"><img src="img/social/twitter.png" class="img-circle" alt="twitter"></a>
+					<a href="https://www.facebook.com/introapp"><img src="img/social/facebook.png" class="img-circle" alt="facebook"></a>
+
+
+
+				</div>
+			</div>
+			<!-- END SOCIAL ICON -->
+
+		</div>
+	</div>
+</section>
+<!-- END FOOTER SECTION -->
+
+<!-- CONTACT MODAL -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 		<h3 id="myModalLabel">Let's grab coffee...</h3>
-	  </div>
-	  <div class="modal-body">
-		<div class="row">  
-		  
-		  <!-- ADDRESS -->
-		  <div class="span3"> 
-			<strong>Intro App, Inc.</strong>
-			<address>
-			  19354 Yellow Clover Drive<br/>
-			  Tampa, FL 33647<br/>
-			  <br>
-			  <strong>Phone:</strong> (623) 824-1405<br/>
-			  <strong>Email:</strong> <a href="#" title="Contact us via email!">ryan@introapp.net</a>
-			</address>
-		  </div> 
-		  <!-- END ADDRESS -->
-		
-		  <!-- CONTACT FORM -->
-		  <form class="span3">
-			<div class="row">
-			  <div class="span4">
-				<input type="text" class="input-xlarge span4" placeholder="Your name">
-				<input type="text" class="input-xlarge span4" placeholder="Your email">
-				<textarea name="message" id="message" class="input-xlarge span4" rows="2" placeholder="Message..."></textarea>
-			  </div>
-			</div>
-		  </form>
-		  <!-- END CONTACT FORM -->
-	
-		</div>
-	  </div>
-	  <div class="modal-footer">
-		<a class="btn btn-danger">Send</a>
-	  </div>
 	</div>
-	<!-- END CONTACT MODAL -->
+	<div class="modal-body">
+		<div class="row">  
 
-    <!-- JAVASCRIPT -->
-    <!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-	<script src="js/bootstrap-collapse.js"></script>
-	<script src="js/bootstrap-affix.js"></script>
-	<script src="js/modernizr.custom.js"></script>
-	<script src="js/classie.js"></script>
-	<script src="js/cbpScroller.js"></script>
-	<script src="js/smoothscroll.js"></script>
-	<script src="js/jquery.cbpQTRotator.min.js"></script>
-	
-	<!-- CUSTOM JAVASCRIPT -->
-	<script type="text/javascript">
-	  new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
-	</script>
-		
-	<script type="text/javascript">
-	  $( function() {
-	  
-		"use strict";
+			<!-- ADDRESS -->
+			<div class="span3"> 
+				<strong>Intro App, Inc.</strong>
+				<address>
+					19354 Yellow Clover Drive<br/>
+					Tampa, FL 33647<br/>
+					<br>
+					<strong>Phone:</strong> (623) 824-1405<br/>
+					<strong>Email:</strong> <a href="#" title="Contact us via email!">ryan@introapp.net</a>
+				</address>
+			</div> 
+			<!-- END ADDRESS -->
+
+			<!-- CONTACT FORM -->
+			<form class="span3">
+				<div class="row">
+					<div class="span4">
+						<input type="text" class="input-xlarge span4" placeholder="Your name">
+						<input type="text" class="input-xlarge span4" placeholder="Your email">
+						<textarea name="message" id="message" class="input-xlarge span4" rows="2" placeholder="Message..."></textarea>
+					</div>
+				</div>
+			</form>
+			<!-- END CONTACT FORM -->
+
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a class="btn btn-danger">Send</a>
+	</div>
+</div>
+<!-- END CONTACT MODAL -->
+
+<!-- JAVASCRIPT -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-transition.js"></script>
+<script src="js/bootstrap-collapse.js"></script>
+<script src="js/bootstrap-affix.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpScroller.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.cbpQTRotator.min.js"></script>
+
+<!-- CUSTOM JAVASCRIPT -->
+<script type="text/javascript">
+new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+</script>
+
+<script type="text/javascript">
+$( function() {
+
+	"use strict";
 			/*
 			- how to call the plugin:
 			$( selector ).cbpQTRotator( [options] );
@@ -573,16 +573,16 @@
 			$( selector ).cbpQTRotator( 'destroy' );
 			*/
 
-		$( '#cbp-qtrotator' ).cbpQTRotator();
+			$( '#cbp-qtrotator' ).cbpQTRotator();
 
-	  } );
-	</script>		
-	<script type="text/javascript">
+		} );
+</script>		
+<script type="text/javascript">
 
 $(function() {
 	$('#invite').submit(function(event)
 	{
-	
+
 		var email = $("#email").val();
 		var dataString = 'email='+ email;
 		//alert(dataString);
@@ -595,22 +595,21 @@ $(function() {
 		{
 			$.ajax(
 			{
-			type: "POST",
-			url: "subscribe.php",
-			data: dataString,
-			success: function()
-			{
-				$.get('success.html', function(data)
+				type: "POST",
+				url: "subscribe.php",
+				data: dataString,
+				success: function()
 				{
-					modal.open({content: data});
-				});
-			}		
+					$.get('success.html', function(data)
+					{
+						modal.open({content: data});
+					});
+				}		
 			});
+			return false;
 		});
-return false;
-}
-});
+}});
 
 </script>
-  </body>
+</body>
 </html>
