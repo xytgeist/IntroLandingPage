@@ -473,10 +473,10 @@
 $(function() {
 	$('#invite').submit(function(event)
 	{
-		alert("hello");
+	
 		var email = $("#email").val();
 		var dataString = 'email='+ email;
-
+	alert(dataString);
 		if(email=='')
 		{
 			$('.success').fadeOut(200).hide();
