@@ -585,6 +585,7 @@ $(function() {
 	
 		var email = $("#email").val();
 		var dataString = 'email='+ email;
+		//alert(dataString);
 		if(email=='')
 		{
 			//$('.success').fadeOut(200).hide();
@@ -598,13 +599,12 @@ $(function() {
 			data: dataString,
 			success: function()
 			{
-				//alert("success");
-							$.get('success.html', function(data)
-							{
-								modal.open({content: data});
-							}
+				$.get('success.html', function(data){
+					modal.open({content: data});
+	
+			}
 		});
-})
+}
 return false;
 });
 });
