@@ -4231,6 +4231,7 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
+
 .btn {
   display: inline-block;
   *display: inline;
@@ -4300,6 +4301,15 @@ button.close {
   padding: 11px 19px;
   font-size: 17.5px;
 }
+.ryan
+{
+
+  {color: white !important} 
+}
+ .ryan :visited {color: white !important} 
+  .ryan:hover {color: black !important} 
+  .ryan:visited:hover {color: white !important}
+
 .btn-large [class^="icon-"],
 .btn-large [class*=" icon-"] {
   margin-top: 4px;
@@ -4341,6 +4351,7 @@ input[type="button"].btn-block {
 .btn-warning.active,
 .btn-danger.active,
 .btn-success.active,
+
 .btn-info.active,
 .btn-inverse.active {
   color: rgba(255, 255, 255, 0.75);

@@ -1,9 +1,10 @@
 /**********************************************************************************
 
-	Project Name: Teguh Landing Page Custom Styles
-	Description : Custom Stylesheet for Teguh Landing Page
-	Author: Shelby67
-	Author URI: http://shelby67.net
+	Project Name: !ntro App Landing Page
+	Description : Custom Stylesheet for !ntro App Landing Page
+	Author: Ryan Franklin
+	Email Address: ryan@introapp.net
+	Credit to Shelby67 for theme
 	
 	Table of contents :
 	
@@ -163,6 +164,31 @@ h1,h2,h3,h4 {
 p.small-text {
 	font-size: 14px;
 }
+
+#mc-embedded-subscribe-form input {
+	-moz-transition:all .3s ease-in-out;
+	-ms-transition:all .3s ease-in-out;
+	-o-transition:all .3s ease-in-out;
+	-webkit-transition:all .3s ease-in-out;
+	border:none;
+	height:42px;
+	resize: none;
+	letter-spacing:1px;
+	padding: 9px 10px 8px;
+	transition:all .3s ease-in-out;
+	
+	}
+
+#mc-embedded-subscribe-form form {
+	margin-top: 25px;
+}
+
+p.small-text {
+	font-size: 14px;
+}
+
+
+
 
 /* 4. ABOUT SECTION
 ==============================================*/
@@ -452,8 +478,12 @@ p.small-text {
 
 .hi-icon-pencil:before {
 	content: "\e00b";
-}
+}input
+.email_text {
+height:59px;
+background-color: red;
 
+	}
 .hi-icon-link:before {
 	content: "\e00c";
 }
