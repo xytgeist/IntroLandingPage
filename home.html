@@ -471,9 +471,9 @@
 	<script type="text/javascript">
 $(function() {
 $(".submit").click(function() {
-var email = $("#address").val();
+var email = $('#address').attr('value');
 var dataString = 'email='+ email;
-
+alert(email);
 if(email=='')
 {
 $('.success').fadeOut(200).hide();
