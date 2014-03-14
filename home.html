@@ -469,35 +469,62 @@
 	  } );
 	</script>		
 	<script type="text/javascript">
-$(document).ready(function() {
-$('#invite').submit(function(event){
-alert("good");
+$(function() {
+$(".submit").click(function() {
+var email = $("#address").val();
+var dataString = 'email='+ email;
 
+if(email=='')
+{
+$('.success').fadeOut(200).hide();
+$('.error').fadeOut(200).show();
+}
+else
+{
+$.ajax({
+type: "POST",
+url: "subscribe.php",
+data: dataString,
+success: function(){
+$('.success').fadeIn(200).show();
+$('.error').fadeOut(200).hide();
+}
+});
+}
+return false;
+});
 });
 
-	$('#invite').ketchup().submit(function() {
-		alert("I'm here");
-		if ($(this).ketchup('isValid')) {
-			var action = $(this).attr('action');
-			$.ajax({
-				url: action,
-				type: 'POST',
-				data: {
-					email: $('#address').attr('value')
-				},
-				success: function(data){
-					$('#result').html(data).css('color', 'green');
-					alert("hi there");
-				},
-				error: function() {
-					$('#result').html('Sorry, an error occurred.').css('color', 'red');
-					alert("you suck");
-				}
-			});
-		}
-		return false;
-	});
-});
+
+//$(document).ready(function() {
+//$('#invite').submit(function(event){
+//alert("good");
+
+//});
+
+//	$('#invite').ketchup().submit(function() {
+	//	alert("I'm here");
+	//	if ($(this).ketchup('isValid')) {
+	//		var action = $(this).attr('action');
+	//		$.ajax({
+	//			url: action,
+	//			type: 'POST',
+	//			data: {
+	//				email: $('#address').attr('value')
+	//			},
+	//			success: function(data){
+	//				$('#result').html(data).css('color', 'green');
+	//				alert("hi there");
+	//			},
+	//			error: function() {
+	//				$('#result').html('Sorry, an error occurred.').css('color', 'red');
+	//				alert("you suck");
+	//			}
+	//		});
+		//}
+	//	return false;
+	//});
+//});
 </script>
   </body>
 </html>
