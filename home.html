@@ -472,58 +472,39 @@
 
 
 
-$(document).ready(function() {
-$('#invite').submit(function(event){
-//alert("good");
-var name = $("#email").val();
-var dataString = 'email='+ email;
-
-if(email=='')
+$(document).ready(function() 
 {
-$('.success').fadeOut(200).hide();
-$('.error').fadeOut(200).show();
-}
-else
-{
-$.ajax({
-type: "POST",
-url: "join.php",
-data: dataString,
-success: function(){
-	alert("success");
-$('.success').fadeIn(200).show();
-$('.error').fadeOut(200).hide();
-}
-});
-}
-return false;
-});
-});
-});
+	$('#invite').submit(function(event)
+	{
+		alert("good");
+		var name = $("#email").val();
+		var dataString = 'email='+ email;
 
-	$('#invite').ketchup().submit(function() {
-		alert("I'm here");
-		if ($(this).ketchup('isValid')) {
-			var action = $(this).attr('action');
-			$.ajax({
-				url: action,
-				type: 'POST',
-				data: {
-					email: $('#address').attr('value')
-				},
-				success: function(data){
-					$('#result').html(data).css('color', 'green');
-					alert("hi there");
-				},
-				error: function() {
-					$('#result').html('Sorry, an error occurred.').css('color', 'red');
-					alert("you suck");
-				}
-			});
+		if(email=='')
+		{
+			$('.success').fadeOut(200).hide();
+			$('.error').fadeOut(200).show();
+		}
+		else
+		{
+		$.ajax(
+		{
+			type: "POST",
+			url: "subscribe.php",
+			data: dataString,
+			success: function()
+			{
+				alert("success");
+				$('.success').fadeIn(200).show();
+				$('.error').fadeOut(200).hide();
+			}
 		}
 		return false;
-	});
+	}
 });
+
+
+
 </script>
   </body>
 </html>
