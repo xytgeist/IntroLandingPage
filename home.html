@@ -88,7 +88,7 @@
 			  		<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     				<div style="position: absolute; left: -5000px;"><input type="text" name="b_45b0ec174a75eed42672aa77c_8617a50053" value=""></div>
 			    
-			    <input type="submit" value="REQUEST INVITE" name="subscribe" id="subscribe" class="btn btn-danger btn-large">
+			    <input type="submit" value="REQUEST INVITE" name="subscribe" id="mc-embedded-subscribe" class="btn btn-danger btn-large">
 
 		      </div>
 			  <p class="small-text">No spam, your email is safe with us :D</p>
@@ -469,11 +469,15 @@
 	  } );
 	</script>		
 	<script type="text/javascript">
-$(function() {
-$(".subscribe").click(function() {
-var email = $('#address').attr('value');
+
+
+
+$(document).ready(function() {
+$('#invite').submit(function(event){
+//alert("good");
+var name = $("#email").val();
 var dataString = 'email='+ email;
-alert(email);
+
 if(email=='')
 {
 $('.success').fadeOut(200).hide();
@@ -483,9 +487,10 @@ else
 {
 $.ajax({
 type: "POST",
-url: "subscribe.php",
+url: "join.php",
 data: dataString,
 success: function(){
+	alert("success");
 $('.success').fadeIn(200).show();
 $('.error').fadeOut(200).hide();
 }
@@ -494,37 +499,31 @@ $('.error').fadeOut(200).hide();
 return false;
 });
 });
+});
 
-
-//$(document).ready(function() {
-//$('#invite').submit(function(event){
-//alert("good");
-
-//});
-
-//	$('#invite').ketchup().submit(function() {
-	//	alert("I'm here");
-	//	if ($(this).ketchup('isValid')) {
-	//		var action = $(this).attr('action');
-	//		$.ajax({
-	//			url: action,
-	//			type: 'POST',
-	//			data: {
-	//				email: $('#address').attr('value')
-	//			},
-	//			success: function(data){
-	//				$('#result').html(data).css('color', 'green');
-	//				alert("hi there");
-	//			},
-	//			error: function() {
-	//				$('#result').html('Sorry, an error occurred.').css('color', 'red');
-	//				alert("you suck");
-	//			}
-	//		});
-		//}
-	//	return false;
-	//});
-//});
+	$('#invite').ketchup().submit(function() {
+		alert("I'm here");
+		if ($(this).ketchup('isValid')) {
+			var action = $(this).attr('action');
+			$.ajax({
+				url: action,
+				type: 'POST',
+				data: {
+					email: $('#address').attr('value')
+				},
+				success: function(data){
+					$('#result').html(data).css('color', 'green');
+					alert("hi there");
+				},
+				error: function() {
+					$('#result').html('Sorry, an error occurred.').css('color', 'red');
+					alert("you suck");
+				}
+			});
+		}
+		return false;
+	});
+});
 </script>
   </body>
 </html>
