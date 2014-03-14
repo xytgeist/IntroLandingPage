@@ -479,8 +479,8 @@ $(function() {
 	alert(dataString);
 		if(email=='')
 		{
-			$('.success').fadeOut(200).hide();
-			$('.error').fadeOut(200).show();
+			//$('.success').fadeOut(200).hide();
+			//$('.error').fadeOut(200).show();
 		}
 		else
 		{
@@ -490,8 +490,9 @@ $(function() {
 			data: dataString,
 			success: function()
 			{
-				$('.success').fadeIn(200).show();
-				$('.error').fadeOut(200).hide();
+				alert("success");
+			//	$('.success').fadeIn(200).show();
+			//	$('.error').fadeOut(200).hide();
 			}
 		});
 }
