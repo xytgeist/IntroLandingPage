@@ -6,7 +6,9 @@ $send_welcome=false;
 $email_type = 'html';
 $email = $_POST['email'];
 //replace us2 with your actual datacenter
-$submit_url = "http://us2.api.mailchimp.com/1.3/?method=listSubscribe";
+//http://us2.api.mailchimp.com 
+//$submit_url = "http://us2.api.mailchimp.com/1.3/?method=listSubscribe";
+$submit_url = "http://introapp.us3.list-manage.com/subscribe/post?u=45b0ec174a75eed42672aa77c&amp;id=8617a50053";
 $data = array(
 'email_address'=>$email,
 'apikey'=>$apiKey,
