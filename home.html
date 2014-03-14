@@ -470,14 +470,11 @@
 	</script>		
 	<script type="text/javascript">
 
-
-
-$(document).ready(function() 
-{
+$(function() {
 	$('#invite').submit(function(event)
 	{
-		alert("good");
-		var name = $("#email").val();
+		alert("hello")''
+		var email = $("#email").val();
 		var dataString = 'email='+ email;
 
 		if(email=='')
@@ -487,22 +484,20 @@ $(document).ready(function()
 		}
 		else
 		{
-		$.ajax(
-		{
+			$.ajax({
 			type: "POST",
 			url: "subscribe.php",
 			data: dataString,
 			success: function()
 			{
-				alert("success");
 				$('.success').fadeIn(200).show();
 				$('.error').fadeOut(200).hide();
 			}
-			return false;
 		});
-	});
-
-
+}
+return false;
+});
+});
 
 
 </script>
