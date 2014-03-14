@@ -165,7 +165,7 @@ p.small-text {
 	font-size: 14px;
 }
 
-#mc-embedded-subscribe-form input {
+#invite input {
 	-moz-transition:all .3s ease-in-out;
 	-ms-transition:all .3s ease-in-out;
 	-o-transition:all .3s ease-in-out;
@@ -179,7 +179,7 @@ p.small-text {
 	
 	}
 
-#mc-embedded-subscribe-form form {
+#invite form {
 	margin-top: 25px;
 }
 
