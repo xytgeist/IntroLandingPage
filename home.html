@@ -598,7 +598,7 @@ var modal = (function(){
 $(function() {
 $('#contact').submit(function(event)
 {
-	alert("and here we are");
+	
 		var email = $("#cemail").val();
 		var name = $("cname").val();
 		var message = $("cmessage").val();
@@ -620,6 +620,7 @@ $('#contact').submit(function(event)
 					data: dataString,
 					success: function(response)
 					{
+						alert(response);
 							//no matter what, close the popup
 						 $('#SubmissionModal').modal('hide');
 					}
