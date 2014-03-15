@@ -10,7 +10,7 @@ $postString = '{
 "message": {
     "html": "'. $message .'",
     "text": "' . $message . '",
-    "subject": "A Message from a IntroApp Customer",
+    "subject": "A Message from an !ntro Customer",
     "from_email": "'. $emailAddress .'",
     "from_name": "' . $name . '",
     "to": [
