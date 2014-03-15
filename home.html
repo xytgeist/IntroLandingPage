@@ -617,7 +617,7 @@ $(function() {
 				{
 					if (response == "Success!")
 					{
-						 $('#SubmissionModal').show()
+						   $('#SubmissionModal').modal('show');
 						//$.get('success.html', function(data)
 						//{	
 						//	modal.open({content: data});
@@ -625,7 +625,7 @@ $(function() {
 					}
 					else
 					{
-					$('#SubmissionModal').show();
+				   $('#SubmissionModal').modal('show');
 						//alert(response);
 					//	$.get('failed.php?m='+ response, function(data)
 					//	{	
