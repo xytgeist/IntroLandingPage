@@ -9,13 +9,13 @@ $postString = '{
 "key": "f1QyegB0pOTI77DfU_l0PQ",
 "message": {
     "html": "this is the emails html content",
-    "text": "'.$message.'",
+    "text": "' . $message . '",
     "subject": "A Message from a IntroApp Customer",
-    "from_email": "'.$emailAddress.'",
+    "from_email": "'. $emailAddress .'",
     "from_name": "' . $name . '",
     "to": [
         {
-            "email": "Ryan@introapp.net",
+            "email": "ryan@introapp.net",
             "name": "Ryan Franklin"
         }
     ],
