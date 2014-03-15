@@ -428,7 +428,7 @@
 <!-- END FOOTER SECTION -->
 
 <!-- FORM SUBMISSION SUCCESS MODAL -->
-<div id="SubmissionModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="SubmissionSUCCESS-Modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 			<h3 id="SubissionModalTitleLabel">Thanks!</h3>
@@ -442,7 +442,7 @@
 <!-- END FORM SUBMISSION SUCCESS MODAL -->
 
 <!-- FORM SUBMISSION FAIL MODAL -->
-<div id="SubmissionModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="SubmissionFAIL-Modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 			<h3 id="SubissionModalTitleLabel">Oh Snap! Something broke :/</h3>
@@ -667,7 +667,7 @@ $(function() {
 					if (response == "Success!")
 					{
 						   alert(response);
-						   $('#SubmissionModal').modal('show');
+						   $('#SubmissionSUCCESS-Modal').modal('show');
 						//$.get('success.html', function(data)
 						//{	
 						//	modal.open({content: data});
@@ -675,7 +675,7 @@ $(function() {
 					}
 					else
 					{
-				   $('#SubmissionModal').modal('show');
+				   $('#SubmissionFAIL-Modal').modal('show');
 						//alert(response);
 					//	$.get('failed.php?m='+ response, function(data)
 					//	{	
