@@ -467,12 +467,12 @@
 			<!-- END ADDRESS -->
 
 			<!-- CONTACT FORM -->
-			<form class="span3">
+			<form id="contact"  class="span3">
 				<div class="row">
 					<div class="span4">
-						<input type="text" class="input-xlarge span4" placeholder="Your name">
-						<input type="text" class="input-xlarge span4" placeholder="Your email">
-						<textarea name="message" id="message" class="input-xlarge span4" rows="2" placeholder="Message..."></textarea>
+						<input id="cname" type="text" class="input-xlarge span4" placeholder="Your name">
+						<input id="cemail" type="text" class="input-xlarge span4" placeholder="Your email">
+						<textarea  name="message" id="cmessage" class="input-xlarge span4" rows="2" placeholder="Message..."></textarea>
 					</div>
 				</div>
 			</form>
@@ -481,7 +481,7 @@
 		</div>
 	</div>
 	<div class="modal-footer">
-		<a class="btn btn-danger">Send</a>
+		<input type="submit" class="btn btn-danger">Send</input>
 	</div>
 </div>
 <!-- END CONTACT MODAL -->
@@ -594,6 +594,38 @@ var modal = (function(){
 
 				return method;
 			}());
+$function() {
+$('#contact').submit(function(event)
+{
+		var email = $("#cemail").val();
+		var name = $("cname").val();
+		var message = $("cmessage").val();
+
+		var dataString = 'e='+ email + '&m=' +message+ '&n='+name;
+
+		if(email=='')
+		{
+		//do nothing
+
+		}
+	  else
+	  {
+	  	//send email
+			$.ajax(
+				{
+					type: "POST",
+					url: "email.php",
+					data: dataString,
+					success: function(response)
+					{
+							//no matter what, close the popup
+						 $('#SubmissionModal').modal('hide');
+					}
+				})
+
+	  }
+}
+)};
 $(function() {
 	$('#invite').submit(function(event)
 	{

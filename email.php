@@ -1,18 +1,22 @@
 <?php
 $uri = 'https://mandrillapp.com/api/1.0/messages/send.json';
 
+$name = $_POST['n'];
+$emailAddress = $_POST['e'];
+$message = $_POST['m'];
+
 $postString = '{
 "key": "f1QyegB0pOTI77DfU_l0PQ",
 "message": {
     "html": "this is the emails html content",
-    "text": "this is the emails text content",
-    "subject": "this is the subject",
-    "from_email": "ryan@introapp.net",
-    "from_name": "Ryan",
+    "text": "'.$message.'",
+    "subject": "A Message from a IntroApp Customer",
+    "from_email": "'.$emailAddress.'",
+    "from_name": "' . $name . '",
     "to": [
         {
-            "email": "Jody@introapp.net",
-            "name": "Jody"
+            "email": "Ryan@introapp.net",
+            "name": "Ryan Franklin"
         }
     ],
     "headers": {
