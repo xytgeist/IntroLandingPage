@@ -2,7 +2,7 @@
 $uri = 'https://mandrillapp.com/api/1.0/messages/send.json';
 
 $postString = '{
-"key": "3455b6272547020f1088283dfb96b567-us3",
+"key": "f1QyegB0pOTI77DfU_l0PQ",
 "message": {
     "html": "this is the emails html content",
     "text": "this is the emails text content",
