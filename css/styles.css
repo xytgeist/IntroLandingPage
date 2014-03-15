@@ -133,10 +133,10 @@ h1,h2,h3,h4 {
 	font-style: italic;
 }
 
-.static {
+.navbar-buffer {
     position: relative;
     overflow: hidden;
-    padding-top: 140px;
+    padding-top: 60px;
     border-bottom: 1px solid #ECECEC;
 }
 
