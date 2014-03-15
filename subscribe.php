@@ -2,7 +2,7 @@
 $apiKey = '3455b6272547020f1088283dfb96b567-us3';
 $listId = '8617a50053';
 $double_optin=false;
-$send_welcome=false;
+$send_welcome=true;
 $email_type = 'html';
 $email = $_POST['email'];
 //replace us2 with your actual datacenter
