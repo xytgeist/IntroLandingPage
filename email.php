@@ -1,37 +1,63 @@
-<?php
-require 'Mandrill.php';
+$uri = 'https://mandrillapp.com/api/1.0/messages/send.json';
 
-$mandrill = new Mandrill();
+$postString = '{
+"key": "3455b6272547020f1088283dfb96b567-us3",
+"message": {
+    "html": "this is the emails html content",
+    "text": "this is the emails text content",
+    "subject": "this is the subject",
+    "from_email": "jody@introapp.net",
+    "from_name": "John",
+    "to": [
+        {
+            "email": "jody@introapp.net",
+            "name": "Bob"
+        }
+    ],
+    "headers": {
 
-$message = array(
-    'subject' => 'Test message',
-    'from_email' => 'jody@introapp.net',
-    'html' => '<p>this is a test message with Mandrill\'s PHP wrapper!.</p>',
-    'to' => array(array('email' => 'jody@introapp.net', 'name' => 'Jody')),
-    'merge_vars' => array(array(
-        'rcpt' => 'jody@introapp.net',
-        'vars' =>
-        array(
-            array(
-                'name' => 'FIRSTNAME',
-                'content' => 'Jody'),
-            array(
-                'name' => 'LASTNAME',
-                'content' => 'Ford')
-    ))));
+    },
+    "track_opens": true,
+    "track_clicks": true,
+    "auto_text": true,
+    "url_strip_qs": true,
+    "preserve_recipients": true,
 
-$template_name = 'Stationary';
+    "merge": true,
+    "global_merge_vars": [
 
-$template_content = array(
-    array(
-        'name' => 'main',
-        'content' => 'Hi *|FIRSTNAME|* *|LASTNAME|*, thanks for signing up.'),
-    array(
-        'name' => 'footer',
-        'content' => 'Copyright 2012.')
+    ],
+    "merge_vars": [
 
-);
+    ],
+    "tags": [
 
-print_r($mandrill->messages->sendTemplate($template_name, $template_content, $message));
+    ],
+    "google_analytics_domains": [
 
-?>
+    ],
+    "google_analytics_campaign": "...",
+    "metadata": [
+
+    ],
+    "recipient_metadata": [
+
+    ],
+    "attachments": [
+
+    ]
+},
+"async": false
+}';
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $uri);
+curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true );
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true );
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $postString);
+
+$result = curl_exec($ch);
+
+echo $result;
