@@ -8,7 +8,7 @@ $message = $_POST['m'];
 $postString = '{
 "key": "f1QyegB0pOTI77DfU_l0PQ",
 "message": {
-    "html": "this is the emails html content",
+    "html": "'. $message .'",
     "text": "' . $message . '",
     "subject": "A Message from a IntroApp Customer",
     "from_email": "'. $emailAddress .'",
@@ -64,6 +64,6 @@ curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $postString);
 
 $result = curl_exec($ch);
-echo $postString;
+//echo $postString;
 echo $result;
 ?>
