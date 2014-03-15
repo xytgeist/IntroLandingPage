@@ -608,8 +608,8 @@ $(function() {
 					else
 					{
 
-						alert(response);
-						$.get('failed.html', function(data)
+						//alert(response);
+						$.get('failed.php?m='+ response, function(data)
 						{	
 							modal.open({content: data});
 						})
