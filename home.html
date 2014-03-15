@@ -617,10 +617,11 @@ $(function() {
 				{
 					if (response == "Success!")
 					{
-						$.get('success.html', function(data)
-						{	
-							modal.open({content: data});
-						});
+						 $('#SubmissionModal').show()
+						//$.get('success.html', function(data)
+						//{	
+						//	modal.open({content: data});
+						//});
 					}
 					else
 					{
