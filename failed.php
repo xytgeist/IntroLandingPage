@@ -1,3 +1,3 @@
 <?php
-echo "Error: " + $_GET['m'];
+echo "Error: " & $_GET['m'];
 ?>
