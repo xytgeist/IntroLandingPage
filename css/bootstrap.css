@@ -249,6 +249,9 @@ a:focus {
 .navbar-fixed-bottom .container {
   width: 940px;
 }
+.span13 {
+  margin-left: 0px;
+}
 .span12 {
   width: 940px;
 }
