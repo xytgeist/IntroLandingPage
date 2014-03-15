@@ -9,7 +9,7 @@ $postString = '{
 "key": "f1QyegB0pOTI77DfU_l0PQ",
 "message": {
     "html": "this is the emails html content",
-    "text": "' . $message . '",
+    "text": "A is for apple.",
     "subject": "A Message from a IntroApp Customer",
     "from_email": "'. $emailAddress .'",
     "from_name": "' . $name . '",
