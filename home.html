@@ -677,7 +677,9 @@ $(function() {
 					else
 					{
 				   $('#SubmissionFAIL-Modal').modal('show');
-						alert(response);
+
+				      $("#SubissionModalContentLabel").append(response);
+						//alert(response);
 					//	$.get('failed.php?m='+ response, function(data)
 					//	{	
 						//	modal.open({content: data});
