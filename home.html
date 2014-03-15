@@ -625,12 +625,12 @@ $(function() {
 					}
 					else
 					{
-
+					$('#SubmissionModal').show();
 						//alert(response);
-						$.get('failed.php?m='+ response, function(data)
-						{	
-							modal.open({content: data});
-						})
+					//	$.get('failed.php?m='+ response, function(data)
+					//	{	
+						//	modal.open({content: data});
+					//	})
 					}
 
 				}		
