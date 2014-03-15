@@ -427,19 +427,33 @@
 </section>
 <!-- END FOOTER SECTION -->
 
-<!-- FORM SUBMISSION MODAL -->
+<!-- FORM SUBMISSION SUCCESS MODAL -->
 <div id="SubmissionModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-			<h3 id="SubissionModalTitleLabel">a form submission occured</h3>
+			<h3 id="SubissionModalTitleLabel">Thanks!</h3>
 	</div>
 	<div class="modal-body">
 		<div class="row">  
-			<div id="SubissionModalContentLabel" class="span3">put some content here</div>
+			<div id="SubissionModalContentLabel" class="span3"> We'll send you an invite as soon as the app is available!</div>
  		</div>
  	</div>
 </div>
-<!-- END FORM SUBMISSION MODAL -->
+<!-- END FORM SUBMISSION SUCCESS MODAL -->
+
+<!-- FORM SUBMISSION FAIL MODAL -->
+<div id="SubmissionModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="SubissionModalTitleLabel">Oh Snap! Something broke :/</h3>
+	</div>
+	<div class="modal-body">
+		<div class="row">  
+			<div id="SubissionModalContentLabel" class="span3">Here is where we put $data->error - just have to figure out how to do that!</div>
+ 		</div>
+ 	</div>
+</div>
+<!-- END FORM SUBMISSION FAIL MODAL -->
 
 <!-- CONTACT MODAL -->
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
