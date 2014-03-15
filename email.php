@@ -8,11 +8,11 @@ $postString = '{
     "text": "this is the emails text content",
     "subject": "this is the subject",
     "from_email": "jody@introapp.net",
-    "from_name": "John",
+    "from_name": "Jody",
     "to": [
         {
-            "email": "jody@introapp.net",
-            "name": "Bob"
+            "email": "ryan@introapp.net",
+            "name": "Ryan"
         }
     ],
     "headers": {
