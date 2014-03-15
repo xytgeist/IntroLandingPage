@@ -450,7 +450,8 @@
 	<div class="modal-body">
 		<div class="row">  
 			<div id="SubissionModalContentLabel" class="span3">
-				<div id="Message"><p>It looks like </p></div>
+				<div>It looks like </div>
+				<div id="Message"></div>
 			</div>
  		</div>
  	</div>
@@ -677,13 +678,13 @@ $(function() {
 					else
 					{
 				   $('#SubmissionFAIL-Modal').modal('show');
-				   alert(response);
+				   //alert(response);
 				   //var h = $('SubissionModalContentLabel').html();
 				   //alert(h);
 						//$('SubissionModalContentLabel').html(response);
 						  //  var tt = "I'm an idiot?";
     
-    				$("#Message").html(response);
+    				$("#Message").html('It looks like ' +response);
 						//console.log(response);
 				    //  $('#SubissionModalContentLabel').append(response);
 						//alert(response);
