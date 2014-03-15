@@ -600,8 +600,8 @@ $('#contact').submit(function(event)
 {
 	
 		var email = $("#cemail").val();
-		var name = $("cname").val();
-		var message = $("cmessage").val();
+		var name = $("#cname").val();
+		var message = $("#cmessage").val();
 
 		var dataString = 'e='+ email + '&m=' +message+ '&n='+name;
 		alert(dataString);
