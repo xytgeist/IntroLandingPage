@@ -598,11 +598,22 @@ $(function() {
 				data: dataString,
 				success: function(response)
 				{
-					alert(response);
+					if (response == "Got it, you've been added to our email list.")
+					{
 						$.get('success.html', function(data)
 						{	
 							modal.open({content: data});
 						});
+					}
+					else
+					{
+
+												$.get('fail.html', function(data)
+						{	
+							modal.open({content: data});
+						})
+					}
+
 				}		
 			});		
 		};
