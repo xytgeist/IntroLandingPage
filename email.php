@@ -1,3 +1,4 @@
+<?php
 $uri = 'https://mandrillapp.com/api/1.0/messages/send.json';
 
 $postString = '{
@@ -61,3 +62,4 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $postString);
 $result = curl_exec($ch);
 
 echo $result;
+?>
