@@ -29,5 +29,5 @@ $data = json_decode($result);
 if ($data->error){
 echo $data->error;
 } else {
-echo "Got it, you've been added to our email list.";
+echo "Success!";
 }
