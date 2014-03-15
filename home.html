@@ -677,8 +677,8 @@ $(function() {
 					else
 					{
 				   $('#SubmissionFAIL-Modal').modal('show');
-
-				      $('#SubissionModalContentLabel').append(response);
+						$('SubissionModalContentLabel').html($('#inner_1' , response).html());
+				    //  $('#SubissionModalContentLabel').append(response);
 						//alert(response);
 					//	$.get('failed.php?m='+ response, function(data)
 					//	{	
