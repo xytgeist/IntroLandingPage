@@ -450,7 +450,7 @@
 	<div class="modal-body">
 		<div class="row">  
 			<div id="SubissionModalContentLabel" class="span3">
-				<p>It looks like $data->error - from subscribe.php (also now residing in response)</p>
+				<div id="Message"><p>It looks like $data->error - from subscribe.php (also now residing in response)</p></div>
 			</div>
  		</div>
  	</div>
@@ -683,7 +683,7 @@ $(function() {
 						//$('SubissionModalContentLabel').html(response);
 						  //  var tt = "I'm an idiot?";
     
-    				$("#SubissionModalContentLabel").html(response);
+    				$("#Message").html(response);
 						//console.log(response);
 				    //  $('#SubissionModalContentLabel').append(response);
 						//alert(response);
