@@ -7,12 +7,12 @@ $postString = '{
     "html": "this is the emails html content",
     "text": "this is the emails text content",
     "subject": "this is the subject",
-    "from_email": "jody@introapp.net",
-    "from_name": "Jody",
+    "from_email": "ryan@introapp.net",
+    "from_name": "Ryan",
     "to": [
         {
-            "email": "ryan@introapp.net",
-            "name": "Ryan"
+            "email": "Jody@introapp.net",
+            "name": "Jody"
         }
     ],
     "headers": {
