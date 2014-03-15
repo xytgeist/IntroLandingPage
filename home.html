@@ -596,12 +596,13 @@ $(function() {
 				type: "POST",
 				url: "subscribe.php",
 				data: dataString,
-				success: function()
+				success: function(response)
 				{
-					$.get('success.html', function(data)
-					{
-						modal.open({content: data});
-					});
+					alert(response);
+						$.get('success.html', function(data)
+						{	
+							modal.open({content: data});
+						});
 				}		
 			});		
 		};
