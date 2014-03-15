@@ -470,9 +470,9 @@
 			<form id="contact"  class="span3">
 				<div class="row">
 					<div class="span4">
-						<input id="cname" type="text" class="input-xlarge span4" placeholder="Your name">
-						<input id="cemail" type="text" class="input-xlarge span4" placeholder="Your email">
-						<textarea  name="message" id="cmessage" class="input-xlarge span4" rows="2" placeholder="Message..."></textarea>
+						<input id="contactName" type="text" class="input-xlarge span4" placeholder="Your name">
+						<input id="contactEmail" type="text" class="input-xlarge span4" placeholder="Your email">
+						<textarea  name="message" id="contactMessage" class="input-xlarge span4" rows="2" placeholder="Message..."></textarea>
 					</div>
 				</div>
 
@@ -599,9 +599,9 @@ $(function() {
 $('#contact').submit(function(event)
 {
 	
-		var email = $("#cemail").val();
-		var name = $("cname").val();
-		var message = $("cmessage").val();
+		var email = $("#contactEmail").val();
+		var name = $("contactName").val();
+		var message = $("contactMessage").val();
 
 		var dataString = 'e='+ email + '&m=' +message+ '&n='+name;
 
