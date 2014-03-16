@@ -6,7 +6,7 @@ $emailAddress = $_POST['e'];
 $message = $_POST['m'];
 
 $postString = '{
-"key": "f1QyegB0pOTI77DfU_l0PQ",
+"key": "8JCaxDxa5Ec7ZecZEbECsg",
 "message": {
     "html": "'. $message .'",
     "text": "' . $message . '",
