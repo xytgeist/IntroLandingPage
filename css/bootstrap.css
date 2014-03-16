@@ -247,10 +247,13 @@ a:focus {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
+  width: 940px; 
 }
+
 .span13 {
-  margin-left: 0px;
+  width: 380px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 .span12 {
   width: 940px;
