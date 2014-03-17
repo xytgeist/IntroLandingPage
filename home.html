@@ -374,7 +374,7 @@
 					<a href="http://www.startupunderdogs.com"><img src="img/social/rss.png" class="img-circle" alt="rss"></a>
 					<a href="https://plus.google.com/105260740812447089662"><img src="img/social/google.png" class="img-circle" alt="google"></a>
 					<a href="#"><img src="img/social/twitter.png" class="img-circle" alt="twitter"></a>
-					<a href="https://www.facebook.com/introapp"><img src="img/social/facebook.png" class="img-circle" alt="facebook"></a>
+					<a href="https://www.facebook.com/introapp"><img src="img/social/fbRound.png" class="img-circle" alt="facebook"></a>
 				</div>
 			</div>
 			<!-- END SOCIAL ICON -->
@@ -562,10 +562,11 @@ var modal = (function(){
 
 				return method;
 			});
+
+//What does this function do??? Add note!
 $(function() {
-$('#contact').submit(function(event)
-{
-	
+	$('#contact').submit(function(event)
+	{
 		var email = $("#cemail").val();
 		var name = $("#cname").val();
 		var message = $("#cmessage").val();
@@ -574,30 +575,28 @@ $('#contact').submit(function(event)
 		//alert(dataString);
 		if(email=='')
 		{
-		//do nothing
-
+			//do nothing
 		}
-	  else
-	  {
-	  	//send email
+		else
+		{
+		  //send email
 			$.ajax(
+			{
+				type: "POST",
+				url: "email.php",
+				data: dataString,
+				success: function(response)
 				{
-					type: "POST",
-					url: "email.php",
-					data: dataString,
-					success: function(response)
-					{
-						//alert(response);
-							//no matter what, close the popup
-						 $('#myModal').modal('hide');
-					}
-				})
-
-	  }
-	  return false;
-}
-
+					//no matter what, close the popup
+					$('#myModal').modal('hide');
+				}
+			})
+		}
+		return false;
+	}
 )});
+
+//What does this function do??? Add note!
 $(function() {
 	$('#invite').submit(function(event)
 	{
