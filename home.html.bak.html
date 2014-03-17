@@ -5,11 +5,8 @@
 	<!-- TITLE, DESCRIPTION, KEYWORD -->
 	<title>!ntro | Meet someone tonight!</title>
 	<meta name="description" content="!ntro is the easiest way to meet interesting and attractive people while you're out.">
-	<meta name="keyword" content="meet, social, app, date, attractive, interesting, hot, friend, fun, game, hook up, drinking, drink, party">
+	<meta name="keyword" content="meet, social, app, date, attractive, interesting, hot, friend, fun, game">
 	<!-- END TITLE, DESCRIPTION, KEYWORD -->
-	<!-- GOOGLE+ PAGE LINK TO MAKE SITE ELIGIBLE TO SHOW UP ON THE RIGHT-HAND SIDE OF THE GOOGLE SEARCH PAGE - MAKES OUR GOOGLE+ PAGE MORE DISCOVERABLE -->
-	<a href="https://plus.google.com/105260740812447089662" rel="publisher">Google+</a>
-	<!-- END GOOGLE+ PAGE LINK -->
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -622,11 +619,8 @@ $(function() {
 				data: dataString,
 				success: function(response)
 				{
-				//alert(response);
-					//if (response == "Success!" | response == "<br/><b>Notice</b>:  Trying to get property of non-object in <b>/opt/bitnami/apache2/htdocs/main/subscribe.php</b> on line <b>29</b><br/>" | )
-					if(response == "Success!" | response.indexOf("Trying to get property") > -1)
+					if (response == "Success!" | response == "Notice: Trying to get property of non-object in /opt/bitnami/apache2/htdocs/main/subscribe.php on line 29")
 					{
-					
 						$('#SubmissionSUCCESS-Modal').modal('show');
 						//$.get('success.html', function(data)
 						//{	
