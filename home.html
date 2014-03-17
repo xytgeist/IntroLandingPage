@@ -619,9 +619,9 @@ $(function() {
 				data: dataString,
 				success: function(response)
 				{
-					if (response == "Success!")
+					if (response == "Success!" | response == "Notice: Trying to get property of non-object in /opt/bitnami/apache2/htdocs/main/subscribe.php on line 29")
 					{
-						   $('#SubmissionSUCCESS-Modal').modal('show');
+						$('#SubmissionSUCCESS-Modal').modal('show');
 						//$.get('success.html', function(data)
 						//{	
 						//	modal.open({content: data});
